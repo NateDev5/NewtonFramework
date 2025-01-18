@@ -20,9 +20,6 @@ file(GLOB_RECURSE SOURCES "${CMAKE_SOURCE_DIR}/src/*.cpp")
 target_sources(${PROJECT_NAME}
         PRIVATE
         ${SOURCES}
-        ${HEADERS}
-        PUBLIC
-        "${CMAKE_SOURCE_DIR}/include/NewtonFramework.h"
 )
 
 target_link_libraries(${PROJECT_NAME}
@@ -34,4 +31,4 @@ target_link_libraries(${PROJECT_NAME}
         imgui::imgui
 )
 
-target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/include)
+target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_SOURCE_DIR}/include)
