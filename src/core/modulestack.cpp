@@ -2,7 +2,7 @@
 // Created by nate on 1/12/25.
 //
 
-#include "modulestack.h"
+#include "core/modulestack.h"
 
 void NewtonFramework::ModuleStack::pushModule(const std::shared_ptr<Module> &module) {
     // push module on the stack

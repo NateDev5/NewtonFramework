@@ -2,22 +2,19 @@
 // Created by nate on 1/12/25.
 //
 
-#include "application.h"
+#include "core/application.h"
 
 #include <format>
-#include <imgui.h>
 #include <iostream>
 #include <memory>
 
-#include "modules/gui/imgui.h"
-#include "modules/time/time.h"
 #include "core/desktopwindow.h"
 #include "imgui/wlogs.h"
 #include "imgui/wprofiler.h"
+#include "modules/gui/imgui.h"
+#include "modules/time/time.h"
 #include "rendering/baserenderer.h"
 #include "tools/profiler.h"
-#include "utils/input/input.h"
-#include "utils/input/inputcodes.h"
 #include "utils/logging/logger.h"
 #include "utils/logging/loggermacros.h"
 #include "utils/logging/stdoutsink.h"

@@ -2,7 +2,7 @@
 // Created by nate on 1/12/25.
 //
 
-#include "logger.h"
+#include "utils/logging/logger.h"
 
 #include <chrono>
 #include <format>

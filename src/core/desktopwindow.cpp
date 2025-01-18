@@ -2,7 +2,7 @@
 // Created by nate on 1/12/25.
 //
 
-#include "desktopwindow.h"
+#include "core/desktopwindow.h"
 
 #include <format>
 #include <iostream>

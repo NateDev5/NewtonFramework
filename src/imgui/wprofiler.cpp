@@ -2,7 +2,7 @@
 // Created by nate on 1/13/25.
 //
 
-#include "wprofiler.h"
+#include "imgui/wprofiler.h"
 #include "imgui.h"
 #include "tools/profiler.h"
 

@@ -2,7 +2,7 @@
 // Created by nate on 1/18/25.
 //
 
-#include "time.h"
+#include "modules/time/time.h"
 
 #include <GLFW/glfw3.h>
 

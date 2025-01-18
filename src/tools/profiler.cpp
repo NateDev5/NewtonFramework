@@ -2,7 +2,7 @@
 // Created by nate on 1/13/25.
 //
 
-#include "profiler.h"
+#include "tools/profiler.h"
 
 NewtonFramework::DevTools::Profiler& NewtonFramework::DevTools::Profiler::instance() {
     static Profiler instance;

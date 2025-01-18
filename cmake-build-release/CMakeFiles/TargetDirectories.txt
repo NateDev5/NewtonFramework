@@ -1,0 +1,6 @@
+/home/nate/projects/NewtonFramework/cmake-build-release/CMakeFiles/NewtonFramework.dir
+/home/nate/projects/NewtonFramework/cmake-build-release/CMakeFiles/edit_cache.dir
+/home/nate/projects/NewtonFramework/cmake-build-release/CMakeFiles/rebuild_cache.dir
+/home/nate/projects/NewtonFramework/cmake-build-release/example/CMakeFiles/NewtonFramework_Example.dir
+/home/nate/projects/NewtonFramework/cmake-build-release/example/CMakeFiles/edit_cache.dir
+/home/nate/projects/NewtonFramework/cmake-build-release/example/CMakeFiles/rebuild_cache.dir

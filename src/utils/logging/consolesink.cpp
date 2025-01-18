@@ -2,7 +2,7 @@
 // Created by nate on 1/12/25.
 //
 
-#include "consolesink.h"
+#include "utils/logging/consolesink.h"
 
 void NewtonFramework::ConsoleSink::write(const LogData& logData) {
     if (!currentConsole.expired())

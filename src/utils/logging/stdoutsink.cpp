@@ -2,7 +2,7 @@
 // Created by nate on 1/12/25.
 //
 
-#include "stdoutsink.h"
+#include "utils/logging/stdoutsink.h"
 
 #include <iostream>
 #include <sstream>

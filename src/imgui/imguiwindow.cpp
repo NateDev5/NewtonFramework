@@ -2,11 +2,11 @@
 // Created by nate on 1/12/25.
 //
 
-#include "imguiwindow.h"
+#include "imgui/imguiwindow.h"
 
 #include <imgui.h>
 
-#include "windowmanager.h"
+#include "imgui/windowmanager.h"
 
 void NewtonFramework::ImGuiWindow::setWindowManager(WindowManager *windowManager_) {
     windowManager = windowManager_;

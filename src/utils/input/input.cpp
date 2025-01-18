@@ -2,9 +2,9 @@
 // Created by nate on 1/16/25.
 //
 
-#include "input.h"
+#include "utils/input/input.h"
 
-#include "inputcodes.h"
+#include "utils/input/inputcodes.h"
 #include "core/application.h"
 
 NewtonFramework::Input &NewtonFramework::Input::instance() {

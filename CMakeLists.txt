@@ -14,7 +14,7 @@ add_subdirectory(example)
 
 add_library(${PROJECT_NAME} STATIC)
 
-file(GLOB_RECURSE HEADERS "${CMAKE_SOURCE_DIR}/src/*.hpp" "${CMAKE_SOURCE_DIR}/src/*.h")
+file(GLOB_RECURSE HEADERS "${CMAKE_SOURCE_DIR}/include/*.hpp" "${CMAKE_SOURCE_DIR}/include/*.h")
 file(GLOB_RECURSE SOURCES "${CMAKE_SOURCE_DIR}/src/*.cpp")
 
 target_sources(${PROJECT_NAME}
@@ -22,7 +22,7 @@ target_sources(${PROJECT_NAME}
         ${SOURCES}
         ${HEADERS}
         PUBLIC
-        "${CMAKE_SOURCE_DIR}/src/NewtonFramework.h"
+        "${CMAKE_SOURCE_DIR}/include/NewtonFramework.h"
 )
 
 target_link_libraries(${PROJECT_NAME}
@@ -34,9 +34,4 @@ target_link_libraries(${PROJECT_NAME}
         imgui::imgui
 )
 
-target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/src)
-
-set_target_properties(${PROJECT_NAME} PROPERTIES
-        RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
-        LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib
-)
+target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/include)

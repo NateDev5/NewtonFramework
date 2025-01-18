@@ -1,0 +1,57 @@
+/home/nate/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=/home/nate/.local/share/JetBrains/Toolbox/apps/clion/bin/ninja/linux/x64/ninja -DCMAKE_TOOLCHAIN_FILE=/home/nate/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake -G Ninja -S /home/nate/projects/NewtonFramework -B /home/nate/projects/NewtonFramework/cmake-build-release
+-- Running vcpkg install
+Detecting compiler hash for triplet x64-linux...
+Compiler found: /sbin/c++
+All requested packages are currently installed.
+Total install time: 208 ns
+egl-registry is header-only and can be used from CMake via:
+
+  find_path(EGL_REGISTRY_INCLUDE_DIRS "EGL/egl.h")
+  target_include_directories(main PRIVATE ${EGL_REGISTRY_INCLUDE_DIRS})
+
+opengl-registry is header-only and can be used from CMake via:
+
+  find_path(OPENGL_REGISTRY_INCLUDE_DIRS "GL/glcorearb.h")
+  target_include_directories(main PRIVATE ${OPENGL_REGISTRY_INCLUDE_DIRS})
+
+opengl-registry provides pkg-config modules:
+
+  # Khronos OpenGL registry
+  khronos-opengl-registry
+
+glad provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(glad CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE glad::glad)
+
+glfw3 provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(glfw3 CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE glfw)
+
+glfw3 provides pkg-config modules:
+
+  # A multi-platform library for OpenGL, window and input
+  glfw3
+
+The package glm provides CMake targets:
+
+    find_package(glm CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE glm::glm)
+
+    # Or use the header-only version
+    find_package(glm CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE glm::glm-header-only)
+
+imgui provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(imgui CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE imgui::imgui)
+
+-- Running vcpkg install - done
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/nate/projects/NewtonFramework/cmake-build-release

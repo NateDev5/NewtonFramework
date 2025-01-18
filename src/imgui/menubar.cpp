@@ -2,7 +2,7 @@
 // Created by nate on 1/12/25.
 //
 
-#include "menubar.h"
+#include "imgui/menubar.h"
 #include <imgui.h>
 
 NewtonFramework::MenuItem::MenuItem(const std::string &name_, const std::function<void()> &action_) {
